@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>box-shadow</title>
+</head>
+
+<body>
+    <div class="box-shadowc box-shadow0">
+        box-shadow0
+    </div>
+
+    <div class="box-shadowc box-shadow1">
+        box-shadow1
+    </div>
+
+    <div class="box-shadowc box-shadow2">
+        box-shadow2
+    </div>
+
+    <div class="box-shadowc text-card">
+        card
+    </div>
+
+    <div class="box-shadowc box-shadowDouble">
+        box-----------shadowDouble
+    </div>
+
+    <div class="box-shadowc text-blur">
+        blur
+    </div>
+    <div class="box-shadowc text-border">
+        border
+    </div>
+
+    <div class="box-shadowc text-border2">
+        border2
+    </div>
+
+
+
+
+</body>
+<style>
+    .box-shadowc {
+        width: 130px;
+        height: 50px;
+        margin-top: 50px;
+        background-color: rgb(38, 220, 220);
+    }
+
+    .box-shadow0 {
+        box-shadow: 2px 2px 10px 0px red;
+    }
+
+    .box-shadow1 {
+        box-shadow: -2px -2px 0px 10px red;
+    }
+
+    .box-shadow2 {
+        box-shadow: -2px -2px 10px 10px red;
+    }
+
+    .box-shadowDouble {
+        box-shadow: 30px 30px 0px, 30px -30px 0px inset rgb(97, 234, 143);
+    }
+
+    .text-blur {
+        margin-top: 50px;
+        filter: blur(1px);
+        color: brown;
+    }
+
+    .text-border {
+        color: yellow;
+        box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .text-border2 {
+        border: solid;
+        border-width: 0.1em;
+    }
+
+    .text-card {
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+    }
+</style>
+
+</html>

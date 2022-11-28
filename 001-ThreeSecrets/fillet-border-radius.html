@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>border-radius</title>
+</head>
+
+<body>
+    <div class="border-radiusc border-radius0">
+        border-radius0
+    </div>
+
+    <div class="border-radiusc border-radius1">
+        border-radius1
+    </div>
+
+    <div class="border-radiusc border-radius2">
+        border-radius2
+    </div>
+
+    <div class="border-radiusc border-radius3">
+        radius3
+    </div>
+
+    <div class="border-radiusc border-radius4">
+        radius4
+    </div>
+
+    <div class="border-radiusc border-radius6">
+        radius6
+    </div>
+    <div class="border-radiusc border-radius-circular">
+        border-radius-circular
+    </div>
+    <div class="border-radiusc border-radius-triangle">
+        border-radius-triangle
+    </div>
+
+</body>
+<style>
+    .border-radiusc {
+        width: 100px;
+        height: 50px;
+        margin-top: 50px;
+        background-color: rgb(38, 220, 220);
+    }
+
+    .border-radius0 {
+        border-radius: 20px 0px 20px 60px;
+    }
+
+    .border-radius1 {
+        border-radius: 10% 10%;
+    }
+
+    .border-radius2 {
+        border-radius: 50% 0 50% 0;
+    }
+
+    .border-radius3 {
+        border-radius: 100% 0 100% 0;
+    }
+
+    .border-radius4 {
+        border-radius: 20px 30% 70% 40px;
+    }
+
+    .border-radius5 {
+        border-radius: 20px 30px 70% 100%;
+    }
+
+    .border-radius6 {
+        border-radius: 0px 50% 0 100%;
+    }
+
+    .border-radius-circular {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+        color: rgb(247, 249, 251, 0.3);
+    }
+
+    .border-radius-triangle {
+        background-color: rgba(38, 220, 220, 0);
+        /* opacity: 0; */
+        width: 0;
+        height: 0;
+        border: 40px solid;
+        border-width: 10px 40px 180px 20px;
+        border-color: transparent transparent red transparent;
+    }
+</style>
+
+</html>
